@@ -13,8 +13,9 @@ export const validateSchema = async <T>({ schema, json }: ValidateSchemaProps<T>
     const validate = ajv.compile(schema);
 
     if (!validate(json)) {
+      const prettyJson = JSON.stringify(json, null, 2);
       const prettyError = JSON.stringify(validate.errors, null, 2);
-      throw Error(`Schema validation error: ${prettyError}`);
+      throw Error(`Schema validation error: ${prettyError}\nJSON: ${prettyJson}`);
     }
   });
 };
