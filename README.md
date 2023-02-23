@@ -1,6 +1,6 @@
 # Playwright Typescript API
 
-[Demo allure report](https://nikita-filonov.github.io/playwright_typescript/)
+[Demo allure report](https://nikita-filonov.github.io/playwright_typescript_api/)
 
 **Project setup**
 
