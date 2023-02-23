@@ -10,7 +10,6 @@ cd playwright_typescript_api
 
 yarn install
 yarn playwright install
-
 ```
 
 **Starting auto tests**
