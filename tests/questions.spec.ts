@@ -13,6 +13,7 @@ test.describe('Questions', () => {
 
     await expectStatusCode({ actual: response.status(), expected: 200, api: response.url() });
     await assertQuestion({ expectedQuestion: question, actualQuestion: json });
+
     await validateSchema({ schema: questionSchema, json });
   });
 
@@ -21,6 +22,7 @@ test.describe('Questions', () => {
     const json: Question[] = await response.json();
 
     await expectStatusCode({ actual: response.status(), expected: 200, api: response.url() });
+
     await validateSchema({ schema: questionsListSchema, json });
   });
 
@@ -32,6 +34,7 @@ test.describe('Questions', () => {
 
     await expectStatusCode({ actual: response.status(), expected: 201, api: response.url() });
     await assertQuestion({ expectedQuestion: payload, actualQuestion: json });
+
     await validateSchema({ schema: questionSchema, json });
   });
 
@@ -43,6 +46,7 @@ test.describe('Questions', () => {
 
     await expectStatusCode({ actual: response.status(), expected: 200, api: response.url() });
     await assertUpdateQuestion({ expectedQuestion: payload, actualQuestion: json });
+
     await validateSchema({ schema: updateQuestionSchema, json });
   });
 
