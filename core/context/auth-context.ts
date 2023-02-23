@@ -1,5 +1,5 @@
 import { APIRequestContext, request } from '@playwright/test';
-import { APIAuth } from '../../utils/types/authentication';
+import { APIAuth } from '../../utils/types/api/authentication';
 import { getAuthAPIClient } from '../api/authentication-api';
 
 export const getAuthAPIContext = async ({ user, authToken }: APIAuth): Promise<APIRequestContext> => {

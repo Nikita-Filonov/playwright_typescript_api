@@ -1,5 +1,5 @@
 import { randomNumber, randomString } from '../fakers';
-import { Question, UpdateQuestion } from '../types/questions';
+import { Question, UpdateQuestion } from '../types/api/questions';
 
 export const getRandomUpdateQuestion = (): UpdateQuestion => ({
   question: randomString(),

@@ -1,7 +1,9 @@
 import { getRandomQuestion, getRandomUpdateQuestion } from '../utils/api/questions';
 import { assertQuestion, assertUpdateQuestion } from '../utils/assertions/api/questions';
 import { expectStatusCode } from '../utils/assertions/solutions';
-import { Question } from '../utils/types/questions';
+import { questionSchema, questionsListSchema, updateQuestionSchema } from '../utils/schema/api/questions-schema';
+import { validateSchema } from '../utils/schema/validator';
+import { Question } from '../utils/types/api/questions';
 import { questionsTest as test } from './questions-test';
 
 test.describe('Questions', () => {
@@ -10,13 +12,16 @@ test.describe('Questions', () => {
     const json: Question = await response.json();
 
     await expectStatusCode({ actual: response.status(), expected: 200, api: response.url() });
-    assertQuestion({ expectedQuestion: question, actualQuestion: json });
+    await assertQuestion({ expectedQuestion: question, actualQuestion: json });
+    await validateSchema({ schema: questionSchema, json });
   });
 
   test('Get questions', async ({ questionsClient }) => {
     const response = await questionsClient.getQuestionsAPI();
+    const json: Question[] = await response.json();
 
     await expectStatusCode({ actual: response.status(), expected: 200, api: response.url() });
+    await validateSchema({ schema: questionsListSchema, json });
   });
 
   test('Create question', async ({ questionsClient }) => {
@@ -26,7 +31,8 @@ test.describe('Questions', () => {
     const json: Question = await response.json();
 
     await expectStatusCode({ actual: response.status(), expected: 201, api: response.url() });
-    assertQuestion({ expectedQuestion: payload, actualQuestion: json });
+    await assertQuestion({ expectedQuestion: payload, actualQuestion: json });
+    await validateSchema({ schema: questionSchema, json });
   });
 
   test('Update question', async ({ question, questionsClient }) => {
@@ -36,18 +42,23 @@ test.describe('Questions', () => {
     const json: Question = await response.json();
 
     await expectStatusCode({ actual: response.status(), expected: 200, api: response.url() });
-    assertUpdateQuestion({ expectedQuestion: payload, actualQuestion: json });
+    await assertUpdateQuestion({ expectedQuestion: payload, actualQuestion: json });
+    await validateSchema({ schema: updateQuestionSchema, json });
   });
 
   test('Delete question', async ({ question, questionsClient }) => {
-    const responseQuestionResponse = await questionsClient.deleteQuestionAPI(question.id);
-    const getQuestionResponse = await questionsClient.deleteQuestionAPI(question.id);
+    const deleteQuestionResponse = await questionsClient.deleteQuestionAPI(question.id);
+    const getQuestionResponse = await questionsClient.getQuestionAPI(question.id);
 
     await expectStatusCode({
-      actual: responseQuestionResponse.status(),
-      expected: 200,
-      api: responseQuestionResponse.url()
+      actual: getQuestionResponse.status(),
+      expected: 404,
+      api: getQuestionResponse.url()
     });
-    await expectStatusCode({ actual: getQuestionResponse.status(), expected: 404, api: getQuestionResponse.url() });
+    await expectStatusCode({
+      actual: deleteQuestionResponse.status(),
+      expected: 200,
+      api: deleteQuestionResponse.url()
+    });
   });
 });

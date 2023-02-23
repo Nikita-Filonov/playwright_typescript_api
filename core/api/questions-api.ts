@@ -2,7 +2,7 @@ import test, { APIRequestContext, APIResponse } from '@playwright/test';
 import { expectStatusCode } from '../../utils/assertions/solutions';
 import { APIRoutes } from '../../utils/constants/routes';
 import { APIClient } from '../../utils/types/api/client';
-import { Question, UpdateQuestion } from '../../utils/types/questions';
+import { Question, UpdateQuestion } from '../../utils/types/api/questions';
 
 export class QuestionsAPIClient implements APIClient {
   constructor(public context: APIRequestContext) {}

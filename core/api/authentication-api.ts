@@ -1,7 +1,7 @@
 import test, { APIRequestContext, APIResponse } from '@playwright/test';
 import { APIRoutes } from '../../utils/constants/routes';
 import { APIClient } from '../../utils/types/api/client';
-import { AuthUser } from '../../utils/types/authentication';
+import { AuthUser } from '../../utils/types/api/authentication';
 import { getDefaultAPIContext } from '../context/default-context';
 
 class AuthAPIClient implements APIClient {

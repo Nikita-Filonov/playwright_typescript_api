@@ -2,7 +2,7 @@ import { Fixtures } from '@playwright/test';
 import { QuestionsAPIClient } from '../core/api/questions-api';
 import { getAuthAPIContext } from '../core/context/auth-context';
 import { getRandomQuestion } from '../utils/api/questions';
-import { Question } from '../utils/types/questions';
+import { Question } from '../utils/types/api/questions';
 import { UsersFixture } from './users';
 
 export type QuestionsFixture = {

@@ -1,5 +1,5 @@
 import { Fixtures } from '@playwright/test';
-import { AuthUser } from '../utils/types/authentication';
+import { AuthUser } from '../utils/types/api/authentication';
 
 export type UsersFixture = {
   testUser: AuthUser;

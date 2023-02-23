@@ -1,4 +1,4 @@
-import { Question, UpdateQuestion } from '../../types/questions';
+import { Question, UpdateQuestion } from '../../types/api/questions';
 import { expectToEqual } from '../solutions';
 
 type AssertQuestionProps = {
