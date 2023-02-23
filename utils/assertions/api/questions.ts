@@ -1,5 +1,5 @@
-import { expect } from '@playwright/test';
 import { Question, UpdateQuestion } from '../../types/questions';
+import { expectToEqual } from '../solutions';
 
 type AssertQuestionProps = {
   expectedQuestion: Question;
@@ -11,15 +11,25 @@ type AssertUpdateQuestionProps = {
   actualQuestion: UpdateQuestion;
 };
 
-export const assertQuestion = ({ expectedQuestion, actualQuestion }: AssertQuestionProps) => {
-  expect(expectedQuestion.id).toBe(actualQuestion.id);
-  expect(expectedQuestion.question).toBe(actualQuestion.question);
-  expect(expectedQuestion.correctAnswer).toBe(actualQuestion.correctAnswer);
-  expect(expectedQuestion.possibleAnswers).toEqual(actualQuestion.possibleAnswers);
+export const assertUpdateQuestion = async ({ expectedQuestion, actualQuestion }: AssertUpdateQuestionProps) => {
+  await expectToEqual({
+    actual: expectedQuestion.question,
+    expected: actualQuestion.question,
+    description: 'Question "question"'
+  });
+  await expectToEqual({
+    actual: expectedQuestion.correctAnswer,
+    expected: actualQuestion.correctAnswer,
+    description: 'Question "correctAnswer"'
+  });
+  await expectToEqual({
+    actual: expectedQuestion.possibleAnswers,
+    expected: actualQuestion.possibleAnswers,
+    description: 'Question "possibleAnswers"'
+  });
 };
 
-export const assertUpdateQuestion = ({ expectedQuestion, actualQuestion }: AssertUpdateQuestionProps) => {
-  expect(expectedQuestion.question).toBe(actualQuestion.question);
-  expect(expectedQuestion.correctAnswer).toBe(actualQuestion.correctAnswer);
-  expect(expectedQuestion.possibleAnswers).toEqual(actualQuestion.possibleAnswers);
+export const assertQuestion = async ({ expectedQuestion, actualQuestion }: AssertQuestionProps) => {
+  await expectToEqual({ actual: expectedQuestion.id, expected: actualQuestion.id, description: 'Question "id"' });
+  await assertUpdateQuestion({ expectedQuestion, actualQuestion });
 };

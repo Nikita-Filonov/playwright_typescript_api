@@ -1,13 +1,21 @@
 import { expect, test } from '@playwright/test';
 
-type AssertStatusCode = {
-  actual: number;
-  expected: number;
-  api: string;
+type ExpectToEqual<T> = {
+  actual: T;
+  expected: T;
+  description: string;
 };
 
-export const assertStatusCode = async ({ actual, expected, api }: AssertStatusCode): Promise<void> => {
-  await test.step(`Checking that response status code of API "${api}" equal to ${expected}`, async () => {
-    expect(actual).toBe(expected);
+type AssertStatusCode = { api: string } & Omit<ExpectToEqual<number>, 'description'>;
+
+export const expectToEqual = async <T>({ actual, expected, description }: ExpectToEqual<T>) => {
+  await test.step(`Checking that "${description}" is equal to "${expected}"`, async () => {
+    expect(actual).toEqual(expected);
+  });
+};
+
+export const expectStatusCode = async ({ actual, expected, api }: AssertStatusCode): Promise<void> => {
+  await test.step(`Checking that response status code for API "${api}" equal to ${expected}`, async () => {
+    await expectToEqual({ actual, expected, description: 'Response Status code' });
   });
 };

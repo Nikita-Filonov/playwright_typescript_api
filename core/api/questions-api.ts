@@ -1,5 +1,5 @@
 import test, { APIRequestContext, APIResponse } from '@playwright/test';
-import { assertStatusCode } from '../../utils/assertions/solutions';
+import { expectStatusCode } from '../../utils/assertions/solutions';
 import { APIRoutes } from '../../utils/constants/routes';
 import { APIClient } from '../../utils/types/api/client';
 import { Question, UpdateQuestion } from '../../utils/types/questions';
@@ -39,7 +39,7 @@ export class QuestionsAPIClient implements APIClient {
 
   async createQuestion(data: Question): Promise<Question> {
     const response = await this.createQuestionAPI(data);
-    await assertStatusCode({ actual: response.status(), expected: 201, api: response.url() });
+    await expectStatusCode({ actual: response.status(), expected: 201, api: response.url() });
 
     return await response.json();
   }
