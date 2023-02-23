@@ -7,6 +7,13 @@ export type UsersFixture = {
 
 export const usersFixture: Fixtures<UsersFixture> = {
   testUser: async ({}, use) => {
-    await use({ email: process.env.TEST_USER_EMAIL, password: process.env.TEST_USER_PASSWORD });
+    const email = process.env.TEST_USER_EMAIL;
+    const password = process.env.TEST_USER_PASSWORD;
+
+    if (!email || !password) {
+      throw Error(`Provide "TEST_USER_EMAIL" and "TEST_USER_PASSWORD" inside .env`);
+    }
+
+    await use({ email, password });
   }
 };
