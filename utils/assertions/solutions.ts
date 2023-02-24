@@ -6,7 +6,7 @@ type ExpectToEqual<T> = {
   description: string;
 };
 
-type AssertStatusCode = { api: string } & Omit<ExpectToEqual<number>, 'description'>;
+type ExpectStatusCode = { api: string } & Omit<ExpectToEqual<number>, 'description'>;
 
 export const expectToEqual = async <T>({ actual, expected, description }: ExpectToEqual<T>) => {
   await test.step(`Checking that "${description}" is equal to "${expected}"`, async () => {
@@ -14,7 +14,7 @@ export const expectToEqual = async <T>({ actual, expected, description }: Expect
   });
 };
 
-export const expectStatusCode = async ({ actual, expected, api }: AssertStatusCode): Promise<void> => {
+export const expectStatusCode = async ({ actual, expected, api }: ExpectStatusCode): Promise<void> => {
   await test.step(`Checking that response status code for API "${api}" equal to ${expected}`, async () => {
     await expectToEqual({ actual, expected, description: 'Response Status code' });
   });
