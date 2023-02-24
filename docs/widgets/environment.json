@@ -1,1 +1,19 @@
-[ ]
+[ {
+  "values" : [ "allure-results" ],
+  "name" : "ALLURE_RESULTS_FOLDER"
+}, {
+  "values" : [ "https://api.sampleapis.com" ],
+  "name" : "BASE_URL"
+}, {
+  "values" : [ "1" ],
+  "name" : "CI"
+}, {
+  "values" : [ "Local" ],
+  "name" : "ENV_NAME"
+}, {
+  "values" : [ "some@gmail.com" ],
+  "name" : "TEST_USER_EMAIL"
+}, {
+  "values" : [ "some" ],
+  "name" : "TEST_USER_PASSWORD"
+} ]

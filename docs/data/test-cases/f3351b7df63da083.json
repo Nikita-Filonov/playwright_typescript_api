@@ -1,12 +1,12 @@
 {
-  "uid" : "34c80cb18aeae3bd",
+  "uid" : "f3351b7df63da083",
   "name" : "Delete question",
   "fullName" : "questions.spec.ts#Questions Delete question",
   "historyId" : "6bce9d0d784c5a3499066099e187bcf1",
   "time" : {
-    "start" : 1677182594163,
-    "stop" : 1677182596185,
-    "duration" : 2022
+    "start" : 1677233433656,
+    "stop" : 1677233435549,
+    "duration" : 1893
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,310 +17,310 @@
     "steps" : [ {
       "name" : "Before Hooks",
       "time" : {
-        "start" : 1677182594163,
-        "stop" : 1677182594717,
-        "duration" : 554
+        "start" : 1677233433657,
+        "stop" : 1677233434122,
+        "duration" : 465
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Creating question with id \"2766\"",
+        "name" : "Creating question with id \"3324\"",
         "time" : {
-          "start" : 1677182594190,
-          "stop" : 1677182594699,
-          "duration" : 509
+          "start" : 1677233433662,
+          "stop" : 1677233434115,
+          "duration" : 453
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "apiRequestContext.post(/futurama/questions)",
           "time" : {
-            "start" : 1677182594197,
-            "stop" : 1677182594699,
-            "duration" : 502
+            "start" : 1677233433663,
+            "stop" : 1677233434114,
+            "duration" : 451
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
-          "hasContent" : false,
           "stepsCount" : 0,
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : true,
         "stepsCount" : 1,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       }, {
         "name" : "Checking that response status code for API \"https://api.sampleapis.com/futurama/questions\" equal to 201",
         "time" : {
-          "start" : 1677182594700,
-          "stop" : 1677182594710,
-          "duration" : 10
+          "start" : 1677233434116,
+          "stop" : 1677233434121,
+          "duration" : 5
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Checking that \"Response Status code\" is equal to \"201\"",
           "time" : {
-            "start" : 1677182594701,
-            "stop" : 1677182594710,
-            "duration" : 9
+            "start" : 1677233434116,
+            "stop" : 1677233434120,
+            "duration" : 4
           },
           "status" : "passed",
           "steps" : [ {
             "name" : "expect.toEqual",
             "time" : {
-              "start" : 1677182594707,
-              "stop" : 1677182594710,
-              "duration" : 3
+              "start" : 1677233434119,
+              "stop" : 1677233434120,
+              "duration" : 1
             },
             "status" : "passed",
             "steps" : [ ],
             "attachments" : [ ],
             "parameters" : [ ],
-            "hasContent" : false,
             "stepsCount" : 0,
-            "attachmentsCount" : 0,
-            "shouldDisplayMessage" : false
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
           } ],
           "attachments" : [ ],
           "parameters" : [ ],
-          "hasContent" : true,
           "stepsCount" : 1,
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : true,
         "stepsCount" : 2,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       }, {
         "name" : "apiResponse.json",
         "time" : {
-          "start" : 1677182594712,
-          "stop" : 1677182594716,
-          "duration" : 4
+          "start" : 1677233434121,
+          "stop" : 1677233434122,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : false,
         "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 6,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Deleting question with id \"2766\"",
+      "name" : "Deleting question with id \"3324\"",
       "time" : {
-        "start" : 1677182594718,
-        "stop" : 1677182595212,
-        "duration" : 494
+        "start" : 1677233434122,
+        "stop" : 1677233434588,
+        "duration" : 466
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "apiRequestContext.delete(/futurama/questions/2766)",
+        "name" : "apiRequestContext.delete(/futurama/questions/3324)",
         "time" : {
-          "start" : 1677182594723,
-          "stop" : 1677182595211,
-          "duration" : 488
+          "start" : 1677233434124,
+          "stop" : 1677233434588,
+          "duration" : 464
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : false,
         "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Getting question with id \"2766\"",
+      "name" : "Getting question with id \"3324\"",
       "time" : {
-        "start" : 1677182595212,
-        "stop" : 1677182595694,
-        "duration" : 482
+        "start" : 1677233434589,
+        "stop" : 1677233435061,
+        "duration" : 472
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "apiRequestContext.get(/futurama/questions/2766)",
+        "name" : "apiRequestContext.get(/futurama/questions/3324)",
         "time" : {
-          "start" : 1677182595213,
-          "stop" : 1677182595693,
-          "duration" : 480
+          "start" : 1677233434595,
+          "stop" : 1677233435060,
+          "duration" : 465
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : false,
         "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Checking that response status code for API \"https://api.sampleapis.com/futurama/questions/2766\" equal to 404",
+      "name" : "Checking that response status code for API \"https://api.sampleapis.com/futurama/questions/3324\" equal to 404",
       "time" : {
-        "start" : 1677182595695,
-        "stop" : 1677182595702,
-        "duration" : 7
+        "start" : 1677233435061,
+        "stop" : 1677233435067,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Checking that \"Response Status code\" is equal to \"404\"",
         "time" : {
-          "start" : 1677182595695,
-          "stop" : 1677182595701,
-          "duration" : 6
+          "start" : 1677233435062,
+          "stop" : 1677233435067,
+          "duration" : 5
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "expect.toEqual",
           "time" : {
-            "start" : 1677182595700,
-            "stop" : 1677182595701,
-            "duration" : 1
+            "start" : 1677233435066,
+            "stop" : 1677233435066,
+            "duration" : 0
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
-          "hasContent" : false,
           "stepsCount" : 0,
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : true,
         "stepsCount" : 1,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 2,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Checking that response status code for API \"https://api.sampleapis.com/futurama/questions/2766\" equal to 200",
+      "name" : "Checking that response status code for API \"https://api.sampleapis.com/futurama/questions/3324\" equal to 200",
       "time" : {
-        "start" : 1677182595702,
-        "stop" : 1677182595707,
-        "duration" : 5
+        "start" : 1677233435068,
+        "stop" : 1677233435074,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Checking that \"Response Status code\" is equal to \"200\"",
         "time" : {
-          "start" : 1677182595703,
-          "stop" : 1677182595707,
-          "duration" : 4
+          "start" : 1677233435068,
+          "stop" : 1677233435073,
+          "duration" : 5
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "expect.toEqual",
           "time" : {
-            "start" : 1677182595706,
-            "stop" : 1677182595707,
+            "start" : 1677233435072,
+            "stop" : 1677233435073,
             "duration" : 1
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
-          "hasContent" : false,
           "stepsCount" : 0,
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : true,
         "stepsCount" : 1,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 2,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "After Hooks",
       "time" : {
-        "start" : 1677182595708,
-        "stop" : 1677182596185,
-        "duration" : 477
+        "start" : 1677233435074,
+        "stop" : 1677233435548,
+        "duration" : 474
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Deleting question with id \"2766\"",
+        "name" : "Deleting question with id \"3324\"",
         "time" : {
-          "start" : 1677182595709,
-          "stop" : 1677182596183,
-          "duration" : 474
+          "start" : 1677233435075,
+          "stop" : 1677233435547,
+          "duration" : 472
         },
         "status" : "passed",
         "steps" : [ {
-          "name" : "apiRequestContext.delete(/futurama/questions/2766)",
+          "name" : "apiRequestContext.delete(/futurama/questions/3324)",
           "time" : {
-            "start" : 1677182595712,
-            "stop" : 1677182596182,
-            "duration" : 470
+            "start" : 1677233435079,
+            "stop" : 1677233435546,
+            "duration" : 467
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
-          "hasContent" : false,
           "stepsCount" : 0,
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : true,
         "stepsCount" : 1,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 2,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : true,
     "stepsCount" : 20,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -340,7 +340,7 @@
     "value" : "LAPTOP-VDKHCJMI"
   }, {
     "name" : "thread",
-    "value" : "LAPTOP-VDKHCJMI-26792-playwright-worker-4"
+    "value" : "LAPTOP-VDKHCJMI-11508-playwright-worker-0"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -355,6 +355,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "34c80cb18aeae3bd.json",
+  "source" : "f3351b7df63da083.json",
   "parameterValues" : [ ]
 }

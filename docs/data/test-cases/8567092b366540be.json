@@ -1,12 +1,12 @@
 {
-  "uid" : "363faa8fabc32693",
+  "uid" : "8567092b366540be",
   "name" : "Get questions",
   "fullName" : "questions.spec.ts#Questions Get questions",
   "historyId" : "828076ce7ca29289e4c9d4190c015e3c",
   "time" : {
-    "start" : 1677182594155,
-    "stop" : 1677182594762,
-    "duration" : 607
+    "start" : 1677233431248,
+    "stop" : 1677233431724,
+    "duration" : 476
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,145 +17,145 @@
     "steps" : [ {
       "name" : "Before Hooks",
       "time" : {
-        "start" : 1677182594157,
-        "stop" : 1677182594174,
-        "duration" : 17
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Getting questions",
-      "time" : {
-        "start" : 1677182594177,
-        "stop" : 1677182594702,
-        "duration" : 525
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "apiRequestContext.get(/futurama/questions)",
-        "time" : {
-          "start" : 1677182594188,
-          "stop" : 1677182594702,
-          "duration" : 514
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : true,
-      "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "apiResponse.json",
-      "time" : {
-        "start" : 1677182594704,
-        "stop" : 1677182594707,
+        "start" : 1677233431248,
+        "stop" : 1677233431251,
         "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Checking that response status code for API \"https://api.sampleapis.com/futurama/questions\" equal to 200",
+      "name" : "Getting questions",
       "time" : {
-        "start" : 1677182594709,
-        "stop" : 1677182594721,
-        "duration" : 12
+        "start" : 1677233431251,
+        "stop" : 1677233431717,
+        "duration" : 466
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Checking that \"Response Status code\" is equal to \"200\"",
+        "name" : "apiRequestContext.get(/futurama/questions)",
         "time" : {
-          "start" : 1677182594709,
-          "stop" : 1677182594721,
-          "duration" : 12
+          "start" : 1677233431253,
+          "stop" : 1677233431717,
+          "duration" : 464
         },
         "status" : "passed",
-        "steps" : [ {
-          "name" : "expect.toEqual",
-          "time" : {
-            "start" : 1677182594719,
-            "stop" : 1677182594721,
-            "duration" : 2
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "hasContent" : false,
-          "stepsCount" : 0,
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false
-        } ],
+        "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : true,
-        "stepsCount" : 1,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
+      "stepsCount" : 1,
       "hasContent" : true,
-      "stepsCount" : 2,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Validating json schema",
+      "name" : "apiResponse.json",
       "time" : {
-        "start" : 1677182594722,
-        "stop" : 1677182594760,
-        "duration" : 38
+        "start" : 1677233431718,
+        "stop" : 1677233431718,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Checking that response status code for API \"https://api.sampleapis.com/futurama/questions\" equal to 200",
+      "time" : {
+        "start" : 1677233431718,
+        "stop" : 1677233431720,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Checking that \"Response Status code\" is equal to \"200\"",
+        "time" : {
+          "start" : 1677233431718,
+          "stop" : 1677233431720,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "expect.toEqual",
+          "time" : {
+            "start" : 1677233431719,
+            "stop" : 1677233431720,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Validating json schema",
+      "time" : {
+        "start" : 1677233431720,
+        "stop" : 1677233431723,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "After Hooks",
       "time" : {
-        "start" : 1677182594760,
-        "stop" : 1677182594761,
+        "start" : 1677233431723,
+        "stop" : 1677233431724,
         "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : true,
     "stepsCount" : 9,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -175,7 +175,7 @@
     "value" : "LAPTOP-VDKHCJMI"
   }, {
     "name" : "thread",
-    "value" : "LAPTOP-VDKHCJMI-26792-playwright-worker-1"
+    "value" : "LAPTOP-VDKHCJMI-11508-playwright-worker-0"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -190,6 +190,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "363faa8fabc32693.json",
+  "source" : "8567092b366540be.json",
   "parameterValues" : [ ]
 }

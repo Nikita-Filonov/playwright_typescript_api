@@ -1,12 +1,12 @@
 {
-  "uid" : "5175c86113e145de",
+  "uid" : "68e03d051ddb4e1c",
   "name" : "Create question",
   "fullName" : "questions.spec.ts#Questions Create question",
   "historyId" : "32f9d31b5740072756997893a28ada1d",
   "time" : {
-    "start" : 1677182594171,
-    "stop" : 1677182594775,
-    "duration" : 604
+    "start" : 1677233431726,
+    "stop" : 1677233432225,
+    "duration" : 499
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,265 +17,265 @@
     "steps" : [ {
       "name" : "Before Hooks",
       "time" : {
-        "start" : 1677182594171,
-        "stop" : 1677182594204,
-        "duration" : 33
+        "start" : 1677233431726,
+        "stop" : 1677233431731,
+        "duration" : 5
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Creating question with id \"2936\"",
+      "name" : "Creating question with id \"3180\"",
       "time" : {
-        "start" : 1677182594206,
-        "stop" : 1677182594702,
-        "duration" : 496
+        "start" : 1677233431731,
+        "stop" : 1677233432217,
+        "duration" : 486
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "apiRequestContext.post(/futurama/questions)",
         "time" : {
-          "start" : 1677182594213,
-          "stop" : 1677182594702,
-          "duration" : 489
+          "start" : 1677233431733,
+          "stop" : 1677233432216,
+          "duration" : 483
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : false,
         "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "apiResponse.json",
       "time" : {
-        "start" : 1677182594704,
-        "stop" : 1677182594706,
-        "duration" : 2
+        "start" : 1677233432217,
+        "stop" : 1677233432218,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "Checking that response status code for API \"https://api.sampleapis.com/futurama/questions\" equal to 201",
       "time" : {
-        "start" : 1677182594709,
-        "stop" : 1677182594722,
-        "duration" : 13
+        "start" : 1677233432218,
+        "stop" : 1677233432219,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Checking that \"Response Status code\" is equal to \"201\"",
         "time" : {
-          "start" : 1677182594711,
-          "stop" : 1677182594721,
-          "duration" : 10
+          "start" : 1677233432218,
+          "stop" : 1677233432219,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "expect.toEqual",
           "time" : {
-            "start" : 1677182594720,
-            "stop" : 1677182594721,
-            "duration" : 1
+            "start" : 1677233432219,
+            "stop" : 1677233432219,
+            "duration" : 0
           },
           "status" : "passed",
           "steps" : [ ],
           "attachments" : [ ],
           "parameters" : [ ],
-          "hasContent" : false,
           "stepsCount" : 0,
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
         } ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : true,
         "stepsCount" : 1,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 2,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Checking that \"Question \"id\"\" is equal to \"2936\"",
-      "time" : {
-        "start" : 1677182594722,
-        "stop" : 1677182594724,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "expect.toEqual",
-        "time" : {
-          "start" : 1677182594724,
-          "stop" : 1677182594724,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
       "hasContent" : true,
-      "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Checking that \"Question \"question\"\" is equal to \"nxwXYHjb7ERQMLxPn24ZCmR\"",
+      "name" : "Checking that \"Question \"id\"\" is equal to \"3180\"",
       "time" : {
-        "start" : 1677182594724,
-        "stop" : 1677182594726,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "expect.toEqual",
-        "time" : {
-          "start" : 1677182594726,
-          "stop" : 1677182594726,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "hasContent" : false,
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : true,
-      "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "Checking that \"Question \"correctAnswer\"\" is equal to \"ZxUnkd3Hgb2IrlYdgq6YKoT\"",
-      "time" : {
-        "start" : 1677182594727,
-        "stop" : 1677182594728,
+        "start" : 1677233432219,
+        "stop" : 1677233432220,
         "duration" : 1
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "expect.toEqual",
         "time" : {
-          "start" : 1677182594727,
-          "stop" : 1677182594727,
+          "start" : 1677233432220,
+          "stop" : 1677233432220,
           "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : false,
         "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Checking that \"Question \"possibleAnswers\"\" is equal to \"ix2r9NB5PS1JiCclNpLF\"",
+      "name" : "Checking that \"Question \"question\"\" is equal to \"yfL7avzWVbvQJkaqTIAyXBDd\"",
       "time" : {
-        "start" : 1677182594728,
-        "stop" : 1677182594729,
-        "duration" : 1
+        "start" : 1677233432220,
+        "stop" : 1677233432222,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "expect.toEqual",
         "time" : {
-          "start" : 1677182594728,
-          "stop" : 1677182594729,
+          "start" : 1677233432221,
+          "stop" : 1677233432222,
           "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
-        "hasContent" : false,
         "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : true,
       "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
-      "name" : "Validating json schema",
+      "name" : "Checking that \"Question \"correctAnswer\"\" is equal to \"h0nGvqPvMyY2V0nSWjMxTpZO\"",
       "time" : {
-        "start" : 1677182594729,
-        "stop" : 1677182594774,
-        "duration" : 45
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
-    }, {
-      "name" : "After Hooks",
-      "time" : {
-        "start" : 1677182594774,
-        "stop" : 1677182594775,
+        "start" : 1677233432222,
+        "stop" : 1677233432223,
         "duration" : 1
       },
       "status" : "passed",
+      "steps" : [ {
+        "name" : "expect.toEqual",
+        "time" : {
+          "start" : 1677233432223,
+          "stop" : 1677233432223,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Checking that \"Question \"possibleAnswers\"\" is equal to \"jfwhII6Uph7XiEgxiqomN,x8MUhWkzWtiw1Ud1MKX2idNyb8s,HQiHXXrumM4KEVFQPEMMc2uKt,SXDsQfYi5yXX3vx3hfjGJ,m8iCRFXnUolsNxPWeTjgCz,t8WfJ7n20ZDGedAvCpvf2Vt,7NjX1sj5HUIDnwzZ7nRax,xltHRUtI3MUNQn8kblkaff,ktexGjqRpnBq20di7JVtU,Y0ZPLMHQ5JVHGN6vabW7hXW,38WrD8pgtPmKBTSES4jMT,f2d8GdGF5LOYxBFVBdLeL5sri,NKd4EaDnjFb2ysKoSc1IwXe,SlNZ9vezjgL6jR6PUFx5x,iLEB9ayB6sjf69OwW0hJ,7ocRQO4ZtCmV5aujtda1y7,Wdx7YliwWqvx85e1cO1gpkHG,W5XfdBqvtN8UzrXO0u4brrX0,sRyucMAWlrWes9L3PyF3T,SrBqrS21ENEpIasMY9K545M,gtrNy2ckgeOh18H0wC66lTy,2YPBS66MEt9O6f76VDPo,PGxGsZnveaXhpryyToqGb0C\"",
+      "time" : {
+        "start" : 1677233432224,
+        "stop" : 1677233432224,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "expect.toEqual",
+        "time" : {
+          "start" : 1677233432224,
+          "stop" : 1677233432224,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Validating json schema",
+      "time" : {
+        "start" : 1677233432225,
+        "stop" : 1677233432225,
+        "duration" : 0
+      },
+      "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1677233432225,
+        "stop" : 1677233432225,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : true,
     "stepsCount" : 17,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -295,7 +295,7 @@
     "value" : "LAPTOP-VDKHCJMI"
   }, {
     "name" : "thread",
-    "value" : "LAPTOP-VDKHCJMI-26792-playwright-worker-2"
+    "value" : "LAPTOP-VDKHCJMI-11508-playwright-worker-0"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -310,6 +310,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5175c86113e145de.json",
+  "source" : "68e03d051ddb4e1c.json",
   "parameterValues" : [ ]
 }
