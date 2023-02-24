@@ -1,5 +1,6 @@
-const LETTERS_WITH_NUMBERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+const NUMBERS = '0123456789';
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+const LETTERS_WITH_NUMBERS = LETTERS + NUMBERS;
 
 export const randomNumber = (start: number = 500, end: number = 2000): number =>
   Math.floor(Math.random() * (end - start + 1) + end);
@@ -13,4 +14,8 @@ export const randomString = (start: number = 10, end: number = 20, charSet: stri
   return randomString;
 };
 
-export const randomEmail = (): string => `e2e+${randomString(10, 20).toLocaleLowerCase()}@profi.io`;
+export const randomListOfStrings = (start: number = 10, end: number = 20): string[] => {
+  const range = randomNumber(start, end);
+
+  return Array.from(Array(range).keys()).map((_) => randomString());
+};
