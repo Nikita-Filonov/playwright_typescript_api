@@ -16,10 +16,10 @@ export const getAuthAPIContext = async ({ user, authToken }: APIAuth): Promise<A
     const authClient = await getAuthAPIClient();
     const token = await authClient.getAuthToken(user);
 
-    extraHTTPHeaders = { ...extraHTTPHeaders, token };
+    extraHTTPHeaders = { ...extraHTTPHeaders, Authorization: `Token ${token}` };
   }
   if (authToken && !user) {
-    extraHTTPHeaders = { ...extraHTTPHeaders, token: authToken };
+    extraHTTPHeaders = { ...extraHTTPHeaders, Authorization: `Token ${authToken}` };
   }
 
   return await request.newContext({
